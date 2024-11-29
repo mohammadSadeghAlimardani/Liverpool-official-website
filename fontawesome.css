@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'fa-brands-400';
+    src: url('./fontawesome-free-6.4.2-web/webfonts/fa-brands-400.woff2') format('woff2'),
+        url('./fontawesome-free-6.4.2-web/webfonts/fa-brands-400.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'fa-regular-400';
+    src: url('./fontawesome-free-6.4.2-web/webfonts/fa-regular-400.woff2') format('woff2'),
+        url('./fontawesome-free-6.4.2-web/webfonts/fa-regular-400.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'fa-solid-900';
+    src: url('./fontawesome-free-6.4.2-web/webfonts/fa-solid-900.woff2') format('woff2'),
+        url('./fontawesome-free-6.4.2-web/webfonts/fa-solid-900.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'fa-v4compatibility';
+    src: url('./fontawesome-free-6.4.2-web/webfonts/fa-v4compatibility.woff2') format('woff2'),
+        url('./fontawesome-free-6.4.2-web/webfonts/fa-v4compatibility.ttf') format('truetype');
+}
+i{
+    font-family: 'fa-brands-400','fa-regular-400','fa-solid-900','fa-v4compatibility';
+}

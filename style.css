@@ -1,0 +1,827 @@
+/* --- General Styles ----------------------- */
+html{
+    font-size: 90%;
+    font-family: 'Roboto-Regular';
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.17rem;
+}
+h4{
+    font-size: 1rem;
+}
+h5{
+    font-size: 0.83rem;
+}
+h5{
+    font-size: 0.67rem;
+}
+.container{
+    margin: 0 auto;
+    width: 55%;
+}
+.container-fluid{
+    margin: 0 auto;
+    width: 90%;
+}
+.container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-fluid .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    background-color: #0d0d0d;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+/* ---- adv -------------------------- */
+.adv{
+    padding: 1rem 0;
+}
+.adv .video-adv{
+    text-align: center;
+    padding: 2.5rem 0;
+    width: 100%;
+    background: url('images/adv/liverpool-goal.gif') 0 40%/cover;
+}
+.adv .video-adv p{
+    color: white;
+    text-transform: uppercase;
+}
+/* ---- header ----------------------------- */
+#header{
+    background-color: #db0715;
+}
+#header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 0 1.8rem;
+}
+#header .navbar{
+    padding: 1rem 0;
+}
+#header .navbar .row{
+    justify-content: space-between;
+}
+#header .navbar ul li.btn-modal{
+    display: none;
+}
+#header .navbar ul li a{
+    color: white;
+}
+#header .navbar ul li a:hover{
+    color: beige;
+}
+.news header{
+    margin-bottom: 1rem;
+}
+.news header ul{
+    display: flex;
+    justify-content: space-between;
+}
+.news header ul li a{
+    color: white;
+}
+.news header ul li span{
+    font-weight: bold;
+    color: white;
+    background-color: #bb1215;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.news main .news-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.news main .news-cards .card{
+    padding: 1.5rem;
+}
+.news main .news-cards .card:hover{
+    background-color:  #bb1215;
+}
+.news main .news-cards .card .card-header img{
+    object-fit: cover;
+    width: 100%;
+    height: 15rem;
+}
+.news main .news-cards .card .card-body{
+    color: white;
+    margin-top: 4rem;
+}
+.news main .news-cards .card .card-body .published-time{
+    margin-bottom: 0.5rem;
+}
+.news main .news-cards .card .card-body .text-new{
+    line-height: 1.4;
+}
+/* ---- modal -------------------------- */
+.modal{
+    overflow-y: scroll;
+    background-color: white;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    width: 50%;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.modal.show{
+    transform: translateX(0%);
+}
+.modal .row{
+    padding: 0.75rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.modal .modal-header .row div h2{
+    color: #db0715;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.modal .modal-header .row div img:hover{
+    cursor: pointer;
+}
+.modal .modal-body .navbar .row ul li a{
+    color: black;
+}
+.modal .modal-body .content{
+    border-bottom: 1px solid #d8d8d8;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    margin-bottom: 1rem;
+}
+.modal .modal-body .content > h3{
+    margin-top: 1.5rem;
+    padding-left: 0.5rem;
+    color: #444d4c;
+}
+.modal .modal-body .content > h3 a{
+    color: #585359;
+}
+.modal .modal-body .content .box{
+    padding: 1rem;
+    background-color: #db0715;
+    color: white;
+}
+.modal .modal-body .content .box p{
+    font-size: 1.17rem;
+    margin: 1.5rem 0;
+    line-height: 1.4;
+}
+.modal .modal-body .content .box a{
+    color: white;
+}
+.modal .modal-body .content .box a h3{
+    padding: 1rem;
+    padding-bottom: 3rem;
+    background-color: #0c0c0c;
+}
+.modal .modal-footer nav.navbar-social-network{
+    margin-bottom: 2rem;
+}
+.modal .modal-footer nav.navbar-social-network ul{
+    display: flex;
+    justify-content: space-between;
+}
+.modal .modal-footer nav.navbar-social-network ul li a i{
+    color: #db0715;
+    font-size: 2.5rem;
+}
+.modal .modal-footer nav.navbar-help ul{
+    gap: 0 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.modal .modal-footer nav.navbar-help ul li a{
+    color: #585359;
+}
+.mask.show{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #afafaf66;
+}
+/* ---- schedule --------------------------- */
+#schedule{
+    padding: 2rem 0;
+}
+#schedule header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+#schedule header .title ul li span{
+    color: white;
+    background-color: #0b0e03;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+#schedule header .navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+#schedule header .navbar ul .add-to-calendar{
+    padding: 0.5rem 1rem;
+    background-color: #fbd705;
+    border-radius: 10px;
+}
+#schedule header .navbar ul .add-to-calendar a{
+    color: black;
+}
+#schedule header .navbar ul .all-fixtures a{
+    color: #ababab;
+}
+#schedule .schedule-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem 1.5rem;
+}
+#schedule .schedule-cards .card{
+    border: 1px solid #d6d6d6;
+    padding: 1rem;
+}
+#schedule .schedule-cards .card .card-header{
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#schedule .schedule-cards .card .card-header div h4{
+    margin-bottom: 0.5rem;
+}
+#schedule .schedule-cards .card .card-header div .date-match{
+    color: #ababab;
+}
+#schedule .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#schedule .card-body .matchday div{
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+    padding: 1rem 0;
+}
+#schedule .card-body .matchday .away-team{
+    border-bottom: 1px solid #d6d6d6;
+}
+#schedule .card-body .remaining-matchday{
+    display: flex;
+    align-items: center;
+}
+#schedule .card-body .remaining-matchday .remaining-time-integer{
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+}
+#schedule .card-body .remaining-matchday .remaining-time-string h4{
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+}
+#schedule .card-footer{
+    margin-top: 2rem;
+}
+#schedule .card-footer h2{
+    height: 4rem;
+    background-color: #0c0c0c;
+    color: white;
+    padding: 1rem;
+}
+/* ---- shop ------------------------ */
+.shop{
+    padding: 2rem 0;
+}
+.shop header{
+    margin-bottom: 2rem;
+}
+.shop header .row{
+    justify-content: space-between;
+}
+.shop header .title{
+    background-color: #0d0d0d;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.shop header .shop-now a{
+    color: #ababab;
+}
+.carousel-cell{
+    padding: 1rem;
+    text-align: right;
+    position: relative;
+    border: 1px solid #d6d6d6;
+    width: 33%;
+    height: 300px;
+    margin-right: 10px;
+}
+.carousel-cell:before {
+    display: block;
+}
+.carousel-cell .carousel-cell-image{
+    height: 90%;
+    position: absolute;
+    right: 1rem;
+}
+.carousel-cell .carousel-cell-image img{
+    box-shadow: 0 0 5px 5px #f4f4f4;
+    object-fit: cover;
+    width: 70%;
+    height: 100%;
+}
+.carousel-cell .carousel-cell-title{
+    padding: 1.5rem 20% 1rem 0;
+    text-align: left;
+    background-color: white;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}
+.carousel-cell .carousel-cell-title .title-product{
+    color: #ababab;
+    margin-bottom: 1rem;
+}
+.carousel-cell .carousel-cell-title .price-product{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.carousel-cell:hover{
+    box-shadow: 0 0 5px 10px #f4f4f4;
+}
+/* ----- more-news -------------------------------- */
+#more-news{
+    margin-top: 6rem;
+    padding: 5rem 0;
+    background-color: #db0715; 
+}
+/* ----- have-you-seen -------------------------- */
+#have-you-seen{
+    background-color: #f6f6f6;
+    padding: 4rem 0;
+}
+#have-you-seen header{
+    margin-bottom: 3rem;
+}
+#have-you-seen main .content h2{
+    line-height: 1.4;
+    font-size: 2.5rem;
+}
+#have-you-seen main{
+    display: grid;
+    grid-template-columns: 7.5fr 2.5fr;
+}
+#have-you-seen main .content .title-content{
+    padding-right: 20%;
+    margin-bottom: 4rem;
+}
+#have-you-seen main .content h5{
+    margin-top: 0.75rem;
+    color: #ababab;
+}
+#have-you-seen main .content img{
+    width: 100%;
+}
+#have-you-seen main .sidebar .box{
+    background-color: white;
+    padding: 1rem;
+}
+#have-you-seen main .sidebar .box-header img{
+    object-fit: cover;
+    width: 100%;
+    height: 12rem;
+}
+#have-you-seen main .sidebar .box .box-body{
+    margin-top: 1rem;
+}
+#have-you-seen main .sidebar .box .box-body h5{
+    color: #ababab;
+    margin-bottom: 0.5rem;
+}
+#have-you-seen main .sidebar .box .box-body p{
+    color: black;
+    padding-bottom: 1.5rem;
+    line-height: 1.4;
+    border-bottom: 1px solid #ababab;
+}
+/* ---- profile-players -------------------------- */
+.profile-players{
+    padding: 2rem 0;
+    background-color: #f6f6f6;
+}
+.profile-players header{
+    margin-bottom: 2rem;
+}
+.profile-players header .row{
+    justify-content: space-between;
+}
+.profile-players header .title{
+    background-color: #0d0d0d;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.profile-players .view-profile-players a{
+    color: #444d4c;
+}
+.profile-players .carousel .carousel-cell{
+    background: linear-gradient(-45deg, #e8e5e5 40%, white);
+    text-align: left;
+    height: 400px;
+}
+.profile-players .carousel .carousel-cell-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-players .carousel .carousel-cell-header > div div{
+    margin-bottom: 1rem;
+}
+.profile-players .carousel .carousel-cell-header > div .player-number h2{
+    font-family: 'wolfalcon';
+}
+.profile-players .carousel .carousel-cell-header img{
+    object-fit: cover;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+}
+.profile-players .carousel .carousel-cell .carousel-cell-body{
+    margin-top: 3rem;
+}
+.profile-players .carousel .carousel-cell .carousel-cell-body .season-number{
+    color: #d7d7d7;
+    margin-bottom: 1.5rem;
+}
+.profile-players .carousel .carousel-cell .carousel-cell-body .row{
+    color: #585359;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+}
+.profile-players .carousel .carousel-cell .carousel-cell-footer nav ul{
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+}
+.profile-players .carousel .carousel-cell .carousel-cell-footer nav ul li a{
+    color: #444d4c;
+}
+/* ---- interview ----------------------------*/
+#interview{
+    margin-top: 2rem;
+    background-color: #fed700;
+    padding: 4rem 0;
+}
+#interview .container .story-interview h4{
+    margin-bottom: 0.5rem;
+}
+#interview .container .story-interview h2{
+    font-size: 3rem;
+    transition: all 0.4s;
+}
+#interview .container .story-interview h2 i{
+    color: black;
+}
+#interview .container .story-interview h2:hover i{
+    padding-left: 1rem;
+}
+#interview .container .what-we-learned{
+    line-height: 1.4;
+    border-top: 1px solid #deb400;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    width: 50%;
+}
+#interview .container .what-we-learned img{
+    margin-top: 1rem;
+    object-fit: cover;
+    width: 100%;
+    height: 12rem;
+}
+/* ---- club-and-community -----------------------*/
+#club-and-community{
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+#club-and-community .title{
+    background-color: #0d0d0d;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+#club-and-community .card{
+    border-bottom: 1px solid #d7d7d7;
+}
+#club-and-community .card:hover{
+    background-color: #f6f6f6;
+}
+#club-and-community .card .card-body .published-time{
+    color: #ababab;
+}
+#club-and-community .card .card-body .text-new{
+    color: black;
+}
+/* ---- events -----------------------------*/
+#events{
+    padding: 2rem 0;
+}
+#events .our-history{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 3rem;
+}
+#events .our-history .box{
+    padding: 4rem 0;
+    background-color: #f6f6f6;
+}
+#events .our-history .box .worst-time,.best-time{
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    line-height: 1.4;
+}
+#events .our-history .box .event-time{
+    color: #b89a3a;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+#events .our-history .box .event-description{
+    font-weight: bold;
+}
+#events .our-history .worst-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#events .our-history .worst-time .content h2{
+    color: #b89a3a;
+    font-size: 3.5rem;
+    border-bottom: 1px solid #b89a3a;
+}
+#events .our-history .worst-time .content{
+    width: 100%;
+}
+#events .our-history .best-time .row{
+    margin: 0 auto;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #b89a3a;
+}
+#events .our-history .best-time .row img{
+    filter: grayscale(1);
+}
+/*---- trophies -------------------------- */
+#trophies{
+    padding: 2rem 0;
+    margin-top: 3rem;
+    background-color: #f6f6f6;
+}
+#trophies .row{
+    justify-content: center;
+}
+#trophies .row > div{
+    text-align: center;
+    width: 100%;
+}
+#trophies .row div img{
+    width: 100%;
+    height: 8rem;
+}
+#trophies .row div h4{
+    margin-top: 1rem;
+    color: #515151;
+}
+/* ---- footer ---------------------------*/
+footer .top-footer{
+    padding: 5rem 0;
+    background-color: #db0715;
+}
+footer .top-footer .row{
+    justify-content: space-between;
+}
+footer .middle-footer{
+    background-color: #b71415;
+}
+footer .bottom-footer{
+    background-color: #911712;
+}
+footer .middle-footer{
+    padding: 5rem 0;
+}
+footer .middle-footer .container-fluid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+footer .middle-footer .container-fluid .cell img{
+    width: 64px;
+    height: 64px;
+}
+footer .bottom-footer .social-network-navbar{
+    padding: 2rem 0;
+}
+footer .bottom-footer .social-network-navbar .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .bottom-footer .social-network-navbar .row nav ul{
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+}
+footer .bottom-footer .social-network-navbar .row nav ul li a{
+    color: white;
+    font-size: 0.85rem;
+}
+footer .bottom-footer .social-network-navbar .row nav ul li a i{
+    font-size: 2.5rem;
+}
+footer .bottom-footer .copyright{
+    border-top: 1px solid #b43f38;
+    padding: 3rem 0;
+    text-align: center;
+    line-height: 1.4;
+    color: white;
+    text-transform: uppercase;
+}
+/* ---- media queries -------------------------*/
+@media screen and (max-width : 1200px){
+    footer .bottom-footer .social-network-navbar .row{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem 0;
+    }
+}
+@media screen and (max-width : 1024px){
+    #header .navbar ul li.btn-modal{
+        display: block;
+    }
+    #header .navbar .row .navigation{
+        display: none;
+    }
+    #header .navbar .row{
+        width: 100%;
+        display: block;
+    }
+    #header .navbar .row .logo ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width : 992px){
+    .news main .news-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    #schedule .schedule-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 1.5rem;
+    }
+    .carousel-cell{
+        width: 40%;
+    }
+    #have-you-seen main{
+        grid-template-columns: 6fr 4fr;
+    }
+    #interview .container .story-interview{
+        height: 12rem;
+        overflow-y: scroll;
+    }
+    #interview .container .what-we-learned{
+        width: 100%;
+    }
+    #events .our-history{
+        grid-template-columns: 1fr;
+        gap: 3rem 0;
+    }
+    footer .bottom-footer .social-network-navbar .row nav ul{
+        flex-wrap: wrap;
+        gap: 1rem 1rem;
+    }
+}
+@media screen and (max-width : 768px){
+    .carousel-cell{
+        width: 50%;
+    }
+    #have-you-seen main .content .title-content{
+        padding-right: 0;
+    }
+    #have-you-seen main{
+        grid-template-columns: 1fr;
+    }
+    #have-you-seen main .sidebar{
+        overflow-x: scroll;
+    }
+    #have-you-seen main .sidebar > div{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+    }
+    #trophies div .row{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width : 720px) {
+    #schedule .schedule-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem 1.5rem;
+    }   
+}
+@media screen and (max-width : 640px){
+    #schedule header{
+        flex-direction: column;
+        gap: 1rem 0;
+    }
+    #schedule header .navbar ul{
+        flex-direction: column;
+    }
+    .modal{
+        width: 70%;
+    }
+    footer .top-footer .row{
+        flex-direction: column;
+    } 
+}
+@media screen and (max-width : 576px){
+    .news main .news-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    #have-you-seen main .content .title-content{
+        height: 8rem;
+        overflow-y: scroll;
+    }
+    .carousel-cell{
+        width: 60%;
+    }
+    footer .middle-footer .container-fluid{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width : 480px){
+    .modal .modal-footer nav ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem 0;
+    }
+    .modal .modal-body .content .box{
+        height: 8rem;
+        overflow: scroll;
+    }
+    .profile-players header .row{
+        flex-direction: column;
+        gap: 1rem 0;
+    }
+    .carousel-cell{
+        width: 70%;
+    }
+}
+@media screen and (max-width : 320px){
+    .carousel-cell{
+        width: 90%;
+    }
+}

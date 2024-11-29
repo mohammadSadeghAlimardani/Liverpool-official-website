@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('./font/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./font/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('./font/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'wolfalcon';
+    src: url('./font/WolfalconRegular-RpjW3.ttf') format('truetype');
+}
